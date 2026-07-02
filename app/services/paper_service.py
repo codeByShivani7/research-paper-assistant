@@ -3,8 +3,8 @@ from pathlib import Path
 
 from fastapi import UploadFile
 
-from app.services.chunking import chunk_text
-from app.services.pdf_parser import extract_pages_from_pdf
+from app.chunking.fixed_chunker import chunk_text
+from app.parsers.pdf_parser import extract_pages_from_pdf
 
 
 UPLOAD_DIR = Path("uploads")
