@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     qdrant_port: int = 6333
     qdrant_collection_name: str = "research_papers"
     embedding_dimension: int = 384
+    gemini_api_key: str
 
     model_config = SettingsConfigDict(
         env_file=".env",
